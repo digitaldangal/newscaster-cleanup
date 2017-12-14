@@ -1,0 +1,307 @@
+body{
+	background: #111111;
+	display:inline;
+}
+
+a, p, h1, h2, h3, h4{
+	color: #fff;
+	font-family: "Arial", Helvetica, sans-serif;
+
+}
+
+h1{
+	margin-top: 20px;
+}
+
+[data-reactroot] {
+	display: inline;
+	height: 100% !important;
+	position: absolute;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+
+.main {
+	display:inline;
+	height: 100% !important;
+	position: absolute;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.header{
+	width: 100%;
+}
+
+.col-wrap{
+	height: 100%;
+	width: 50%;
+	margin: 0px 0px;
+	float:left;
+
+}
+
+
+
+
+
+
+
+
+.cursor-default{
+  cursor: default;
+}
+
+.h1h{
+  height: 1.5rem
+}
+
+
+
+
+.clip-path-row{
+  height: 1.5rem;
+}
+
+
+.clip-path-row:hover {
+  background-color:#777777 !important;
+  cursor: pointer;
+}
+
+.clip-path-row:hover .buttonholder, .buttonholder:hover {
+    display: inline !important;
+}
+
+.clip-cat-row:hover{
+  cursor: default;
+  background-color:#777777 !important;
+}
+.clip-cat-row:hover .buttonholder, .buttonholder:hover {
+    display: inline !important;
+}
+
+.l50{
+  left: 50%;
+}
+.l90{
+  left: 90%;
+}
+
+.l80{
+  left: 80%;
+}
+
+.buttonholder{
+  display: none;
+  position:absolute;
+
+  height: 1.5rem;
+}
+
+.no-highlight{
+  user-select: none;
+}
+
+.smallbutton {
+  background-color: #0099ff;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+	border-radius: 5px;
+	cursor: pointer;
+  height: 1.5rem;
+}
+
+.smallbutton:hover {
+    background-color: #00ccff;
+}
+
+.button-half {
+	background-color: #0099ff;
+    border: none;
+    color: white;
+	width: 40%;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 12px;
+	border-radius: 5px;
+	margin: 5px auto;
+	cursor: pointer;
+}
+
+.readoutwrap {
+	display: flex;
+    align-items: center;
+	height: 50%;
+	width:100%;
+}
+
+.readout {
+	background: #293134;
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	border-radius: 5px;
+	text-align: center;
+}
+
+#col2{
+	display: flex;
+    align-items: center;
+}
+
+#mainreadout{
+	height: 97.5%;
+}
+
+.statuspanel{
+
+	background: #293134;
+	width: 100%;
+	height: 95%;
+	margin: auto auto;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.flex{
+	display: flex;
+    align-items: center;
+}
+
+#controlpanel{
+	height: 10%;
+	padding-top: 10px;
+}
+
+.logo{
+	width:200px;
+}
+
+.clips{
+	max-width: 90%;
+	margin: 10px auto 0px auto;
+	text-align: left;
+	white-space: nowrap;
+
+}
+
+.clipstatus{
+	width: 90%;
+	font-weight: bold;
+	margin: 9px auto 9px auto;
+	border: 1px solid black;
+	padding: 9px 0px 9px 0px;
+	border-radius: 5px;
+	user-select: none;
+	cursor: default;
+}
+
+#clipfolders{
+	margin-top: 10px;
+	height:92%;
+	width: 96%;
+}
+
+.clip_folders{
+	font-family: "Lucida Console", Monaco, monospace;
+	font-size: 0.7em;
+}
+
+.flex-grow{
+  flex-grow: .5;
+}
+
+.flex-grow-2{
+  flex-grow:2;
+}
+
+.statuswrap{
+	width: 100%;
+	margin: 0px auto 0px auto;
+}
+
+.report{
+	width: 95%;
+	height: 80%;
+	margin: 15px auto 0px auto;
+}
+
+.scroll{
+	overflow-y:auto;
+	overflow-x:hidden;
+}
+
+
+.scroll::-webkit-scrollbar-track{
+	-webkit-box-shadow: inset 0 0 12px rgba(0,0,0,0.3);
+	background-color: #777777;
+  border-radius: 5px;
+}
+
+.scroll::-webkit-scrollbar{
+	width: 12px;
+	background-color: #777777;
+  border-radius: 5px;
+}
+
+.scroll::-webkit-scrollbar-thumb{
+	background-color: #0099ff;
+  border-radius: 3px;
+}
+
+.folder{
+	width:100%;
+	user-select: none;
+	cursor: default;
+}
+
+.foldertag{
+	color: #fff;
+	font-family: "Lucida Console", Monaco, monospace;
+	font-weight: bold;
+	font-size: 0.8em;
+	text-align: left;
+	color: yellow;
+	margin: 5px 0px 0px 0px;
+	user-select: none;
+	cursor: default;
+}
+
+.folder > ul{ /* Cliplists */
+	color: #fff;
+	font-family: "Lucida Console", Monaco, monospace;
+	text-align: left;
+	list-style:none;
+    padding-left: 5px;
+	margin: 5px 0px 0px 0px;
+	user-select: none;
+	cursor: pointer;
+}
+
+.clipitem{
+	font-size: 0.8em;
+	padding: 3px;
+	user-select: none;
+}
+
+.clipitem:hover{
+	background: #666;
+	cursor: pointer;
+}
+
+.orphan{
+	font-weight: bold;
+	color: red;
+}
+
+.selected{
+	background: #0099ff;
+}
+
+.selected:hover{
+	background: #66ccff !important;
+}

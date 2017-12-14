@@ -1,0 +1,74 @@
+{
+  "name": "NewsCaster_Cleanup",
+  "productName": "NewsCasterCleanup",
+  "version": "1.0.0",
+  "description": "Look for hanging proxies and clean them",
+  "main": "src/main.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "package-win": "electron-packager .   ",
+    "package": "electron-forge package . ",
+    "make": "electron-forge make",
+    "lint": "eslint src"
+  },
+  "keywords": [],
+  "author": "Hunter",
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {
+		"name":"NewsCasterCleanup",
+		"appCopyright": "Copyright NewsMaker Systems 2017",
+		"icon": "./src/cleanup.ico",
+		"win32metadata": {
+			"CompanyName": "NewsMaker Systems",
+			"FileDescription": "NewsCasterCleanup"
+		}
+	  },
+      "electronWinstallerConfig": {
+        "name": "newscaster_cleanup"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "newscastercleanup"
+      }
+    }
+  },
+  "dependencies": {
+    "asar": "^0.13.0",
+    "electron-compile": "^6.4.1",
+    "lodash": "^4.17.4",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1",
+    "xml2js": "^0.4.17"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.6.0",
+    "babel-preset-react": "^6.24.1",
+    "electron-prebuilt-compile": "1.6.11",
+    "eslint": "^4.3.0",
+    "eslint-config-airbnb": "^15.0.2",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-jsx-a11y": "^6.0.2",
+    "eslint-plugin-react": "^7.1.0"
+  }
+}
